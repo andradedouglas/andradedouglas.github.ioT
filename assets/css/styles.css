@@ -371,6 +371,7 @@ body.dark-theme {
 .services_container {
   row-gap: 2.5rem;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  align-items: center;
 }
 .services_content {
   text-align: center;
@@ -384,11 +385,12 @@ body.dark-theme {
   margin-bottom: var(--mb-2);
 }
 .services_title {
-  font-size: var(--h3-font-size);
+  font-size: var(--small-font-size);
   color: var(--title-color);
   margin-bottom: var(--mb-1);
 }
 .services_description {
+  font-size: var(--smaller-font-size);
   padding: 0 1.5rem;
 }
 
@@ -607,6 +609,7 @@ body.dark-theme {
   .services_container,
   .foods_container {
     margin-top: var(--mb-6);
+    align-items: center;
   }
 
   .foods_container {
