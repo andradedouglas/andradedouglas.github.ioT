@@ -144,9 +144,14 @@ body.dark-theme {
   margin-left: var(--mb-2);
   margin-right: var(--mb-2);
 }
+
 .bd-grid {
   display: grid;
-  gap: 1.5rem;
+  gap: 7rem;
+}
+.bd-grid2 {
+  display: grid;
+  gap: 3rem;
 }
 .l-header {
   width: 100%;
@@ -369,47 +374,58 @@ body.dark-theme {
 
 /*========== SERVICES ==========*/
 .services_container {
-  row-gap: 2.5rem;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
   align-items: center;
 }
 .services_content {
-  text-align: center;
+  text-align: left;
+  width: 320px;
+  align-items: center;
 }
 .services_img {
-  width: 64px;
-  height: 64px;
+  width: 50px;
+  height: 50px;
   /* 👇🏽 Só funciona se o SVG tiver
   inserido como path, não img: */
   fill: var(--first-color);
   margin-bottom: var(--mb-2);
+  display: block;
+  margin-left: 6rem;
 }
 .services_title {
   font-size: var(--small-font-size);
   color: var(--title-color);
   margin-bottom: var(--mb-1);
+  text-align: justify;
 }
 .services_description {
   font-size: var(--smaller-font-size);
   padding: 0 1.5rem;
 }
+.services_item {
+  font-size: var(--smaller-font-size);
+}
 
 /*========== FOODS ==========*/
 .foods_container {
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(1, 2fr);
   justify-content: center;
 }
 .foods_content {
+  width: 210px;
+  height: 210px;
   position: relative;
   display: flex;
   flex-direction: column;
   background-color: var(--container-color);
   border-radius: 0.5rem;
   box-shadow: 0 2px 4px var(--shadow-color);
-  padding: 0.75rem;
+  padding: 0.5rem;
+  align-items: center;
 }
 .foods_img {
-  width: 100px;
+  width: 200 0px;
+  height: 70px;
   align-self: center;
   margin-bottom: var(--mb-2);
 }
@@ -417,16 +433,20 @@ body.dark-theme {
 .foods_price {
   font-weight: var(--font-semi-bold);
   color: var(--title-color);
+  text-align: center;
 }
 .foods_name {
   font-size: var(--normal-font-size);
+  text-align: center;
 }
 .foods_detail,
 .foods_price {
   font-size: var(--small-font-size);
+  text-align: center;
 }
 .foods_detail {
   margin-bottom: var(--mb-1);
+  text-align: center;
 }
 .foods_button {
   position: absolute;
@@ -655,7 +675,7 @@ body.dark-theme {
   }
 
   .home_img {
-    width: 500px;
+    width: fit-content;
     margin-top: var(--mb-1);
   }
 
