@@ -582,6 +582,10 @@ body.dark-theme {
     grid-template-columns: 1.75fr 1fr;
     align-items: center;
   }
+  .contact_container2 {
+    grid-template-columns: 1fr 3fr;
+    align-items: center;
+  }
   .contact_button {
     justify-self: center;
   }
